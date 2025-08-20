@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url(imagens/numeros_backgroud2.png);
+}
+
+#containerMaior {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+h3 {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background: #58534c;
+    color: white;
+}
+
+hr {
+    margin-bottom: 20px;
+    color: #58534c;
+}
+
+/* COMO JOGAR
+*************************************/
+#comoJogar {
+    margin: 50px 0 40px;
+    padding: 20px 50px;
+    width: 450px;
+    border-radius: 15px;
+    background: white;
+    text-align: center;
+}
+
+#paragrafosComoJogar {
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+}
+
+#ps {
+    color: #58534c;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+/* ADIVINHE O NÚMERO
+*************************************/
+#adivinheNumero {
+    margin: 0 0 30px;
+    padding: 30px;
+    width: 350px;
+    border-radius: 15px;
+    background: white;
+    text-align: center;
+}
+
+#adivinheNumero button {
+    padding: 7px 14px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: #58534c;
+    border-radius: 7px;
+}
+
+#numeroTentativa {
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #58534c;
+    background: none;
+    border: 1px solid #000;
+    border-radius: 7px;
+
+}
+
+#feedback {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 5px 2px;
+    text-align: center;
+    background: none;
+    border: none;
+    border-radius: 7px;
+}
+
+/* CONTADOR DE TENTATIVAS
+*************************************/
+#contadorDeTentativas {
+    position: absolute;
+    left: 40px;
+    top: 200px;
+    margin: 0 40px;
+    width: 200px;
+    padding: 25px;
+    border-radius: 15px;
+    background: white;
+    text-align: center;
+}
+
+input#tentativas {
+    font-size: 1em;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    padding: 6px;
+    width: 137px;
+    font-weight: bold;
+    border: none;
+    background: white;
+    text-align: center;
+}
+
+#contadorDeTentativas ul li {
+    border-radius: 7px;
+    margin: 8px;
+    padding: 4px;
+    font-weight: bold;
+}
+
+#historico {
+    list-style: none;
+    text-align: center;
+    background: white;
+    font-size: 1em;
+    border-radius: 15px;
+    padding: 6px;
+    margin-bottom: 0;
+}
+
+/* CONFIGURAÇÃO DE TAMANHOS DE TELA
+*************************************/
+
+@media (max-width:450px){
+    /* COMO JOGAR
+    *************************************/
+    #comoJogar {
+        margin: 25px 0 15px;
+        padding: 10px 25px;
+        width: 200px;
+        border-radius: 15px;
+        background: white;
+        text-align: center;
+    }
+
+    /* ADIVINHE O NÚMERO
+    *************************************/
+    #adivinheNumero {
+        margin: 0 auto 15px;
+        padding: 20px;
+        width: 200px;
+        max-width: 200px;
+        border-radius: 15px;
+        background: white;
+        text-align: center;
+    }
+
+    /* CONTADOR DE TENTATIVAS
+    *************************************/
+    #contadorDeTentativas {
+        position: relative;
+        top: 0;
+        left: 5px;
+        margin: 0 auto;
+        width: 110px;
+        padding: 25px;
+        border-radius: 15px;
+        background: white;
+    }
+
+    input#tentativas {
+        font-size: 1em;
+        margin-bottom: 15px;
+        border-radius: 7px;
+        padding: 6px;
+        width: 85px;
+        font-weight: bold;
+        border: none;
+        background: white;
+        text-align: center;
+    }
+}
+
+@media (min-width: 451px) and (max-width:767px){
+    /* COMO JOGAR
+    *************************************/
+    #comoJogar {
+        margin: 50px 0 30px;
+        padding: 20px 50px;
+        width: 300px;
+        border-radius: 15px;
+        background: white;
+        text-align: center;
+    }
+
+    /* ADIVINHE O NÚMERO
+    *************************************/
+    #adivinheNumero {
+        margin: 0 auto 30px;
+        padding: 30px;
+        width: 350px;
+        max-width: 200px;
+        border-radius: 15px;
+        background: white;
+        text-align: center;
+    }
+
+    /* CONTADOR DE TENTATIVAS
+    *************************************/
+    #contadorDeTentativas {
+        position: relative;
+        top: 0;
+        left: 5px;
+        margin: 0 auto;
+        width: 125px;
+        padding: 25px;
+        border-radius: 15px;
+        background: white;
+    }
+
+    input#tentativas {
+        font-size: 1em;
+        margin-bottom: 15px;
+        border-radius: 7px;
+        padding: 6px;
+        width: 100px;
+        font-weight: bold;
+        border: none;
+        background: white;
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) and (max-width: 1250px) {
+    /* COMO JOGAR
+    *************************************/
+    #comoJogar {
+        margin: 50px 0 30px;
+        padding: 20px 50px;
+        width: 450px;
+        border-radius: 15px;
+        background: white;
+        text-align: center;
+    }
+
+    /* ADIVINHE O NÚMERO
+    *************************************/
+    #adivinheNumero {
+        margin: 0 auto 30px;
+        padding: 30px;
+        width: 350px;
+        border-radius: 15px;
+        background: white;
+        text-align: center;
+    }
+
+    /* CONTADOR DE TENTATIVAS
+    *************************************/
+    #contadorDeTentativas {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 150px;
+        padding: 25px;
+        border-radius: 15px;
+        background: white;
+    }
+}
+
+/*FEITO*/ 
+@media (min-width: 1251px) {
+    /* COMO JOGAR
+    *************************************/
+    #comoJogar {
+        margin: 50px 0 40px;
+        padding: 20px 50px;
+        width: 450px;
+        border-radius: 15px;
+        background: white;
+        text-align: center;
+    }
+
+    /* ADIVINHE O NÚMERO
+    *************************************/
+    #adivinheNumero {
+        margin: 0 auto 30px;
+        padding: 30px;
+        width: 350px;
+        border-radius: 15px;
+        background: white;
+        text-align: center;
+    }
+
+    /* CONTADOR DE TENTATIVAS
+    *************************************/
+    #contadorDeTentativas {
+        position: absolute;
+        left: 40px;
+        top: 200px;
+        margin: 0 40px;
+        width: 200px;
+        padding: 25px;
+        border-radius: 15px;
+        background: white;
+        text-align: center;
+    }
+
+}

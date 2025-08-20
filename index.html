@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adivinhe o número</title>
+        <script src="logica.js"></script>
+        <link rel="stylesheet" href="estilo.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+
+        <div id="containerMaior">
+
+            <div id="comoJogar">
+
+                <h3>Como jogar:</h3>
+
+                <div id="paragrafosComoJogar">
+                    
+                    <p class="negrito">
+                    Você deve adivinhar o número certo de acordo com as dicas que você recebe.<br><br>
+                    </p>
+                    <p id="ps">
+                        PS: O número mínimo é 1 e o número máximo é 500.
+                    </p>
+
+                </div>
+
+            </div>
+        
+            <div id="adivinheNumero">
+
+                <h3>Adivinhe o número</h3>
+
+                <input type="text" id="numeroTentativa" placeholder="Digite o número aqui" autofocus><br>
+
+                <button type="button" onclick="numeroDigitado()">Chutar</button><br>
+
+                <input type="text" id="feedback" disabled>
+
+            </div>
+
+            <div id="contadorDeTentativas">
+
+                <h3>Contador de tentativas</h3>
+                
+                <input type="text" id="tentativas" placeholder="0" disabled><br>
+
+                <hr>
+
+                <h3>Histórico de chutes</h3>
+
+                <ul id="historico"></ul>
+
+            </div>
+
+            <footer id="footer">
+                Rodapé
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>
